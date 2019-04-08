@@ -1,0 +1,16 @@
+.buildpath
+.project
+
+/.idea/*
+
+/code/*
+
+docker/mysql/data/*
+docker/redis/data/*
+docker/nginx/log/*
+
+!code/public/.gitignore
+
+!docker/mysql/data/.gitignore
+!docker/redis/data/.gitignore
+!docker/nginx/log/.gitignore
