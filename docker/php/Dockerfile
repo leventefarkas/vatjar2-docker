@@ -6,7 +6,7 @@ ARG PHALCON_EXT_PATH=php7/64bits
 
 RUN apt update \
     && apt install -y zlib1g-dev unzip git libpng-dev libjpeg62-turbo-dev \
-    && docker-php-ext-install zip pdo_mysql gd \
+    && docker-php-ext-install zip pdo_mysql gd bcmath \
     && pecl install xdebug-2.6.1 \
     && docker-php-ext-enable xdebug \
 #   && pecl install pthreads \
