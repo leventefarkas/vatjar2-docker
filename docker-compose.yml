@@ -8,6 +8,7 @@ services:
     volumes:
       - ./code:/code
       - ./docker/nginx/site.conf:/etc/nginx/conf.d/default.conf
+      - ./docker/nginx/rest.conf:/etc/nginx/conf.d/rest.conf
     networks:
       - frontend
   php:
